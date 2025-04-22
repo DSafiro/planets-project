@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c; /* Blackish gray background */
+  color: white; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.planets-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.planet-card {
+  background-color: #2a2a2a; /* Slightly lighter gray for cards */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.planet-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block; /* Ensure the image is treated as a block element */
+}
+
+.planet-card h3,
+.planet-card p {
+  margin: 10px 0;
+  text-align: center; /* Center text */
+}
+
+.planets-filter {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.planets-filter label {
+  margin: 0 10px;
+}
+
+.planets-filter input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 5px;
+}
+
+.planets-filter button {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.planets-filter button:hover {
+  background-color: #555;
+}
